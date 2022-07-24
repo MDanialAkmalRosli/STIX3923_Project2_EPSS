@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Small Notes Testing</title>
+        <script src="https://kit.fontawesome.com/c27971eb1d.js" crossorigin="anonymous"></script>
+        <script src="notestesting_script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="buttonparallel">
+            <!-- Button untuk add nota -->
+            <button class="addnotes" id="addnotes">
+                <i class="fas fa-plus"></i>Add Notes
+            </button>
+            
+            <!-- Button untuk balik ke Home Page -->
+            <button class="btn_returnhomepage" onclick="window.location.href='homepage.php';">
+                Main Page
+            </button>    
+        </div>
+        
+    </body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #94a0e9;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1.5cm;
+        }
+        
+        .buttonparallel {
+            margin-top: -20px;
+            border: none;
+            height: 50px;
+            width: 100%;
+        }
+
+        .btn_returnhomepage {
+            max-width: 500px; height: 1cm;
+            background-color: rgb(71, 68, 215);
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .addnotes {
+            background-color: rgb(71, 68, 215);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 0.25cm 0.25cm;
+            right: 44rem;
+            font-size: 15px;
+            position: fixed;
+        }
+
+        /* Nota */
+        .note {
+            box-shadow: 0px 0px 1px 2px black;
+            margin: 50px;
+            width:6cm; height:6.8cm;
+        }
+
+        /* Bahagian yang ada edit dan delete button */
+        .note .tools {
+            background-color:rgb(71, 68, 215);
+            display: flex;
+            justify-content: flex-end;
+            padding: 0.1cm;
+        }
+        
+        .note .tools button {
+            cursor: pointer;
+            font-size:15px;
+        }
+
+        /* Displayed note (not editable) */
+        .note .main {
+            background-color: beige;
+            overflow: hidden;
+            height: 6cm; width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .note textarea {
+            outline: none;
+            font-size: 15px;
+            border: none;
+            height: 6cm; width: 100%;
+        }
+
+        .note .hidden {
+            display: none;
+        }
+
+    </style>
+
+
+</html>

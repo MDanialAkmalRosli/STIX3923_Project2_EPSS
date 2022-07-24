@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .btn_returnhomepage {
+            max-width: 500px; height: 1cm;
+            background-color: rgb(71, 68, 215);
+            border: none;
+            margin-top: 5px;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    </style>
+    
+    <head>
+        <title>Calendar Section</title>
+        <link href="calendar_themes/peach.css" rel="stylesheet" />
+    </head>
+
+    <body style="background-color: #94a0e9">
+        <button class="btn_returnhomepage" onclick="window.location.href='homepage.php';">
+            Main Page
+        </button>
+        
+        <button class="btn_returnhomepage" onclick="window.location.href='calendar_function.html';">
+            Calendar
+        </button>
+        
+        <div id="calendar" style="position: absolute; width:99%; height:91%;">
+        </div>
+
+        <script src="MindFusion.Scheduling.js" type="text/javascript"></script>
+        <script src="calendar_function.js" type="text/javascript"></script>
+
+    </body>
+
+</html>
